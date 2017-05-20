@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    {% block stylesheets %}{% endblock %}
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}"/>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,600" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="row">
+            <nav class="navbar">
+
+                <div class="col-lg-9">
+                    <div class="logo">
+                        <a href="#">Stay in <i>Sikkim</i></a><br>
+                        <span>Hotel & Resorts</span>
+                    </div>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+            </nav>
+        </div>
+    </div>
+</header>
+
+{% block body %}
+
+{% endblock %}
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <p>
+
+                    &copy; Stay in Sikkim. All Right Reserved 2016<br>
+                    10A National Highway Arithang, Gangtok, East Sikkim
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+{% block javascripts %}
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script>
+        $('a[href*=#]:not([href=#])').click(function () {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                    || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    </script>
+{% endblock %}
+</body>
+</html>

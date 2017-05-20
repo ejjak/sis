@@ -1,0 +1,24 @@
+$oswald:'Oswald', sans-serif;
+
+nav{
+  font-family:$oswald;
+  color: #262626;
+  font-size:1.143em;
+  text-transform: uppercase;
+  a{ color: #464444;}
+  li{
+    display: inline-block;
+    //padding:20px 20px;
+    border-right:1px solid #f1f1f1;
+
+    a:hover{
+      color:#000;
+      text-decoration:none;
+      border-bottom: 1px solid #111;
+    }
+  }
+}
+
+.nav{
+  margin-top: 20px;
+}

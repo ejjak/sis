@@ -1,0 +1,79 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <img src="{{ asset('img/intro.jpg') }}" width="100%" height="500px">
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="intro">
+                    <h1>Welcome to Stay in Sikkim</h1>
+                    <img src="{{ asset('img/divider.png') }}" class="img-responsive center-block" >
+                    <p>Nestled coyly amidst beautiful Himalayas in the northeast of India, Sikkim is a land that
+                        possesses mystical beauty in its every face. This scenic state in the North-Eastern corner
+                        of
+                        India will surely make your holiday memorable and will bring your family closer. And to make
+                        your vacation more pleasant, <br> Stay in Sikkim offers you a list of best hotels located in
+                        Sikkim.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="listing">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="list_block">
+                        <img src="{{ asset('img/listing/cherry.jpg') }}" class="img-responsive">
+                        <div>
+                            <h2>Cherry Resort</h2>
+                            <p>Namchi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="list_block">
+                        <img src="{{ asset('img/listing/meru.jpg') }}" class="img-responsive">
+                        <div>
+                            <h2>The Meru Hotel</h2>
+                            <p>Gangtok</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="list_block">
+                        <img src="{{ asset('img/listing/zharna.jpg') }}" class="img-responsive">
+                        <div>
+                            <h2>Zharna Waterfall Resort</h2>
+                            <p>Rumtek</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div>
+        </div>
+    </section>
+    <section id="contact">
+        <div>
+        <div class="container">
+            <div class="row">
+                <div class="contact-details">
+                <h1><i class="fa fa-mobile"></i> Contact Details </h1>
+
+                <p>
+                    +91 - 9775979999 /
+                    +91 - 7384566927<br>
+                    stayinsikkim@gmail.com<br>
+                    hotelinsikkim@gmail.com
+                </p>
+                </div>
+            </div>
+        </div>
+            </div>
+    </section>
+{% endblock %}
+
+{% block stylesheets %}
+
+{% endblock %}
